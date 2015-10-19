@@ -7778,10 +7778,10 @@ body.admin-menu {
 .btn-desktop-search {
   float: right;
   border-radius: 0;
-  background: #eeeeee;
+  background: #f01653;
   margin-top: -2em; }
   .btn-desktop-search i {
-    color: #f01653;
+    color: white;
     font-size: 150%; }
 
 #mobile-search form {
