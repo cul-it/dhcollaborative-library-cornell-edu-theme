@@ -7781,8 +7781,7 @@ body.admin-menu {
   background: #f01653;
   margin-top: -2em; }
   .btn-desktop-search i {
-    color: white;
-    font-size: 150%; }
+    color: white; }
 
 #mobile-search form {
   padding: 5px; }
