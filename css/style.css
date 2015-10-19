@@ -2,6 +2,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(//fonts.googleapis.com/css?family=Montserrat);
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7428,7 +7429,8 @@ button.close {
   content: ""; }
 
 body {
-  font-family: "Source Sans Pro", Helvetica, Arials, sans-serif; }
+  font-family: "Roboto Slab", Georgia, serif;
+  background: #333333; }
 
 a {
   color: black; }
@@ -7512,7 +7514,7 @@ h5 {
 
 .brand {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 30px;
   font-family: "Montserrat";
   display: block;
   line-height: 1em;
@@ -7542,12 +7544,14 @@ header {
   background: white; }
 
 .main-content {
-  background: white;
-  min-height: 500px;
-  padding: 3em 0; }
-
-.front .main-content {
-  padding-top: 1.5em; }
+  background: url("../img/background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .main-content .container {
+    background: white;
+    padding: 4em 0 0 0; }
 
 .main-text {
   position: relative;
@@ -7570,7 +7574,6 @@ header {
       float: left;
       width: 33.33333%; } }
 
-/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .hero header {
     padding: 2em 0; }
@@ -7579,8 +7582,6 @@ header {
 
   .sidebar {
     margin-top: 0; } }
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (desktops, 1200px and up) */
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -7590,18 +7591,20 @@ header {
 .navbar-toggle {
   margin: 0;
   font-size: 120%;
-  background: #333333;
+  background: #eeeeee;
   border-radius: 0;
   padding: 10px 15px; }
 
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
-  background: #333333; }
+  background: #eeeeee; }
 
 .search-toggle {
-  background: #555555; }
+  background: #555555;
+  color: #f01653; }
 
 .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-  background: #555555; }
+  background: #555555;
+  color: #f01653; }
 
 .global-menu {
   position: relative;
@@ -7626,19 +7629,26 @@ header {
   font-weight: 700; }
 
 nav {
-  background: #f01653; }
+  background: white; }
+  nav .container {
+    background: #f01653;
+    padding-left: 0; }
   nav .nav li {
     float: left; }
     nav .nav li a {
       color: white;
-      font-size: 18px;
-      padding: 15px 20px; }
+      font-size: 14px;
+      padding: 15px 20px;
+      font-family: "Montserrat";
+      text-transform: uppercase; }
     nav .nav li a:hover,
     nav .nav li a:active,
     nav .nav li a:focus {
-      background: #333333; }
+      background: #ce1045;
+      text-decoration: none; }
   nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
-    background: #333333; }
+    background: #ce1045;
+    text-decoration: none; }
 
 #mobile-nav {
   background: white; }
@@ -7684,20 +7694,11 @@ nav {
   #menu .nav {
     float: right; }
 
-  nav .navbar-nav > li > a {
-    font-size: 14px; }
   nav .nav li a {
-    font-size: 14px;
     padding: 10px; } }
 @media (min-width: 992px) {
-  nav .navbar-nav > li > a {
-    font-size: 16px; }
   nav .nav li a {
-    font-size: 16px;
     padding: 15px 20px; } }
-@media (min-width: 1200px) {
-  nav .nav li a {
-    font-size: 18px; } }
 body.admin-menu {
   padding-top: 0 !important; }
 
@@ -7775,10 +7776,11 @@ body.admin-menu {
 .btn-desktop-search {
   float: right;
   border-radius: 0;
-  background: #555555;
+  background: #eeeeee;
   margin-top: -2em; }
   .btn-desktop-search i {
-    color: white; }
+    color: #f01653;
+    font-size: 150%; }
 
 #mobile-search form {
   padding: 5px; }
@@ -7816,32 +7818,19 @@ body.admin-menu {
   .header-search .form-group {
     width: 80%; } }
 /* Large devices (desktops, 1200px and up) */
-.footer-primary {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .footer-primary {
-      float: left;
-      width: 66.66667%; } }
-
-.footer-secondary {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .footer-secondary {
-      float: left;
-      width: 33.33333%; } }
-
 footer {
-  padding: 2em 0; }
+  padding: 2em;
+  margin-top: 4em;
+  background: #eeeeee; }
   footer .nav {
     margin-bottom: 1.5em; }
   footer p, footer li {
     font-size: 13px; }
+  footer .block-title {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 0 1em 0; }
 
 .social-links {
   margin-top: 1.5em; }
@@ -7856,7 +7845,10 @@ footer {
     font-size: 3em;
     color: #555555; }
 
-/* Small devices (tablets, 768px and up) */
+.cul-footer {
+  background: #333333;
+  padding: 2em 0; }
+
 @media (min-width: 768px) {
   .fa-ul {
     margin-left: 2.14286em; }
@@ -7875,14 +7867,6 @@ footer {
   footer .nav > li > a:focus {
     background: inherit;
     text-decoration: none; } }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .footer-secondary {
-    text-align: right; }
-
-  .social-links {
-    margin-top: 0; } }
-/* Large devices (desktops, 1200px and up) */
 @media print {
   a[href]:after {
     content: ""; }

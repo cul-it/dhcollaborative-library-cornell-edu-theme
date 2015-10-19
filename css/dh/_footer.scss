@@ -1,16 +1,19 @@
-.footer-primary {
-	@include make-md-column(8);
-}
-.footer-secondary {
-	@include make-md-column(4);
-}
+
 footer {
-	padding: 2em 0;
+	padding: 2em;
+	margin-top: 4em;
+	background: $gray-lighter;
 	.nav {
 		margin-bottom: 1.5em;
 	}
 	p, li {
 		font-size: 13px;
+	}
+	.block-title {
+		font-family: $font-family-cul;
+		text-transform: uppercase;
+		font-size: 16px;
+		margin: 0 0 1em 0;
 	}
 }
 .social-links {
@@ -31,23 +34,18 @@ footer {
 	}
 }
 
+// CUL footer
+// --------------------
+
+.cul-footer {
+	background: $gray-dark;
+	padding: 2em 0;
+}
+
 // MEDIA QUERIES
 // -------------------------
 
-  // /* Extra small devices (phones, up to 480px) */
-  // /* No media query since this is the default in Bootstrap */
-
-  // /* Small devices (tablets, 768px and up) */
-  // @media (min-width: @screen-sm) { ... }
-
-  // /* Medium devices (desktops, 992px and up) */
-  // @media (min-width: @screen-md) { ... }
-
-  // /* Large devices (large desktops, 1200px and up) */
-  // @media (min-width: @screen-lg) { ... }
-
-
-/* Small devices (tablets, 768px and up) */
+// Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm) { 
   	.fa-ul {
     	margin-left: 2.14286em;
@@ -74,15 +72,9 @@ footer {
 	}
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md) {
-	.footer-secondary {
-		text-align: right;
-	}
-	.social-links {
-		margin-top: 0;
-	}
-}
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: $screen-lg) {
-}
+// Medium devices (desktops, 992px and up) 
+// @media (min-width: $screen-md) {
+// }
+// Large devices (desktops, 1200px and up) 
+// @media (min-width: $screen-lg) {
+// }

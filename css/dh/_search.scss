@@ -14,10 +14,11 @@
 .btn-desktop-search {
 	float: right;
 	border-radius: 0;
-	background: $gray;
+	background: $gray-lighter;
 	margin-top: -2em;
 	i {
-		color: white;
+		color: $hot-pink;
+		font-size: 150%;
 	}
 }
 

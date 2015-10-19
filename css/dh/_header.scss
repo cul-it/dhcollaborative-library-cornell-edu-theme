@@ -26,7 +26,7 @@
 }
 .brand {
 	text-transform: uppercase;
-	font-size: 32px;
+	font-size: 30px;
 	font-family: $font-family-cul;
 	display: block;
 	// color: white;
@@ -73,7 +73,9 @@
 
 /* Medium devices (desktops, 992px and up) */
 // @media (min-width: $screen-md) {
-	
+// 	.brand {
+// 		font-size: 30px;
+// 	}
 // }
 /* Large devices (desktops, 1200px and up) */
 // @media (min-width: $screen-lg) {

@@ -93,11 +93,6 @@
                 <i class="fa fa-search"></i>
               </button>
             </div>
-            <?php if (!empty($page['global_nav'])): ?>
-              <div class="collapse navbar-collapse hidden-xs" id="menu">
-                <?php print render($page['global_nav']); ?>
-              </div>
-            <?php endif; ?>
           </div>
         </div>
       </div>  
@@ -181,39 +176,38 @@
         </div>
       </div>
     <?php else: ?>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php if(drupal_is_front_page()) {
-        unset($page['content']['system_main']['default_message']);
-      }?>
-      <?php print render($page['content']); ?>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <?php print render($title_prefix); ?>
+          <?php if (!empty($title)): ?>
+            <h1><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
+          <?php print $messages; ?>
+          <?php if (!empty($tabs)): ?>
+            <?php print render($tabs); ?>
+          <?php endif; ?>
+          <?php if (!empty($page['help'])): ?>
+            <?php print render($page['help']); ?>
+          <?php endif; ?>
+          <?php if (!empty($action_links)): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+          <?php if(drupal_is_front_page()) {
+            unset($page['content']['system_main']['default_message']);
+          }?>
+          <?php print render($page['content']); ?>
+        </div>
+      </div>
     <?php endif; ?>
-
+    <footer>
+      <?php print render($page['dh_footer']); ?>
+    </div>
   </div>
 </div>
 
-<footer>
+<div class="cul-footer">
   <div class="container">
-    <div class="row">
-      <div class="footer-primary">
-        <?php print render($page['footer_primary']); ?>
-      </div>
-      <div class="footer-secondary">
-        <?php print render($page['footer_secondary']); ?>
-      </div>
-    </div>
+    <?php print render($page['cul_footer']); ?>
   </div>
-</footer>
+</div>
