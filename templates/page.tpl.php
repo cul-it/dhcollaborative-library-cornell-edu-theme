@@ -177,7 +177,7 @@
       </div>
     <?php else: ?>
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-9 col-sm-offset-1">
           <?php print render($title_prefix); ?>
           <?php if (!empty($title)): ?>
             <h1><?php print $title; ?></h1>
