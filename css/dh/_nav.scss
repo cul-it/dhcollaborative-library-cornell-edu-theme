@@ -10,18 +10,18 @@
 .navbar-toggle {
 	margin: 0;
 	font-size: 120%;
-	background: $dark-purple;
+	background: $gray-dark;
 	border-radius: 0;
 	padding: 10px 15px;
 }
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
-	background: $dark-purple;
+	background: $gray-dark;
 }
 .search-toggle {
-	background: $purple;
+	background: $gray;
 }
 .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-	background: $purple;
+	background: $gray;
 }
 
 // Global nav
@@ -56,7 +56,7 @@
 // Main nav
 // ------------------- //
 nav {
-	background: $purple;
+	background: $gray;
 	.nav {
 		li {
 			float: left;
@@ -68,12 +68,12 @@ nav {
 			a:hover,
 			a:active,
 			a:focus {
-				background: $dark-purple;
+				background: $gray-dark;
 			}
 		}
 		.active {
 			a, a:hover, a:active, a:focus {
-				background: $dark-purple;
+				background: $gray-dark;
 			}
 		}
 	}
@@ -84,9 +84,9 @@ nav {
 #mobile-nav {
 	background: white;
 	a {
-		color: $dark-gray;
+		color: $gray-dark;
 		font-size: 14px;
-		border-bottom: 1px solid $pale-gray;
+		border-bottom: 1px solid $gray-lighter;
 	}
 	.navbar-nav {
 		margin-top: 0;
@@ -102,9 +102,9 @@ nav {
 		padding: 0 0 .5em 0;
 		font-size: 14px;
 		text-transform: uppercase;
-		border-bottom: 2px solid $pale-gray;
+		border-bottom: 2px solid $gray-lighter;
 		a {
-			color: $medium-gray;
+			color: $gray;
 			border: none;
 		}
 	}
@@ -126,12 +126,12 @@ nav {
 		margin-top: 1em;
 		i {
 			margin-right: .15em;
-			color: $purple;
+			color: $gray;
 			font-size: 20px;
 		}
 		.active {
 			a, a:hover, a:active, a:focus {
-				color: $dark-gray;
+				color: $gray-dark;
 				font-weight: 700;
 			}
 		}

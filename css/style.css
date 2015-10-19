@@ -7428,11 +7428,10 @@ button.close {
   content: ""; }
 
 body {
-  font-family: "Source Sans Pro", Helvetica, Arials, sans-serif;
-  background: #e4e3e3; }
+  font-family: "Source Sans Pro", Helvetica, Arials, sans-serif; }
 
 a {
-  color: #0068ac; }
+  color: black; }
 
 a:hover {
   color: black;
@@ -7440,14 +7439,14 @@ a:hover {
 
 .main-content a,
 footer a {
-  border-bottom: 1px dotted #999; }
+  border-bottom: 1px dotted #777777; }
 .main-content a:hover,
 .main-content a:active,
 .main-content a:focus,
 footer a:hover,
 footer a:active,
 footer a:focus {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #777777;
   text-decoration: none; }
 
 p, li {
@@ -7487,9 +7486,9 @@ h5 {
     font-size: 12px; }
 
 .btn-primary {
-  background: #666;
+  background: #555555;
   border-radius: 0;
-  border-color: #666;
+  border-color: #555555;
   margin-left: .5em; }
 
 .cornell-identity .container {
@@ -7517,23 +7516,23 @@ h5 {
   font-family: "Montserrat";
   display: block;
   line-height: 1em;
-  color: #222; }
+  color: #333333; }
 
 .brand:hover,
 .brand:active,
 .brand-focus {
-  color: #222;
+  color: #333333;
   text-decoration: none; }
 
 .cul-brand {
-  color: #222;
+  color: #333333;
   font-size: 24px;
   font-family: "Montserrat";
   display: block;
   margin-bottom: .15em; }
 
 .cul-brand:hover {
-  color: #222;
+  color: #333333;
   text-decoration: none; }
 
 /* Small devices (tablets, 768px and up) */
@@ -7591,18 +7590,18 @@ header {
 .navbar-toggle {
   margin: 0;
   font-size: 120%;
-  background: #473968;
+  background: #333333;
   border-radius: 0;
   padding: 10px 15px; }
 
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
-  background: #473968; }
+  background: #333333; }
 
 .search-toggle {
-  background: #9187a8; }
+  background: #555555; }
 
 .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-  background: #9187a8; }
+  background: #555555; }
 
 .global-menu {
   position: relative;
@@ -7627,7 +7626,7 @@ header {
   font-weight: 700; }
 
 nav {
-  background: #9187a8; }
+  background: #555555; }
   nav .nav li {
     float: left; }
     nav .nav li a {
@@ -7637,16 +7636,16 @@ nav {
     nav .nav li a:hover,
     nav .nav li a:active,
     nav .nav li a:focus {
-      background: #473968; }
+      background: #333333; }
   nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
-    background: #473968; }
+    background: #333333; }
 
 #mobile-nav {
   background: white; }
   #mobile-nav a {
-    color: #222;
+    color: #333333;
     font-size: 14px;
-    border-bottom: 1px solid #e4e3e3; }
+    border-bottom: 1px solid #eeeeee; }
   #mobile-nav .navbar-nav {
     margin-top: 0;
     margin-bottom: 0; }
@@ -7656,9 +7655,9 @@ nav {
   padding: 0 0 .5em 0;
   font-size: 14px;
   text-transform: uppercase;
-  border-bottom: 2px solid #e4e3e3; }
+  border-bottom: 2px solid #eeeeee; }
   .sidebar .block-title a {
-    color: #666;
+    color: #555555;
     border: none; }
 .sidebar .nav > li {
   padding: 8px 0;
@@ -7675,10 +7674,10 @@ nav {
   margin-top: 1em; }
   .sidebar .nav i {
     margin-right: .15em;
-    color: #9187a8;
+    color: #555555;
     font-size: 20px; }
   .sidebar .nav .active a, .sidebar .nav .active a:hover, .sidebar .nav .active a:active, .sidebar .nav .active a:focus {
-    color: #222;
+    color: #333333;
     font-weight: 700; }
 
 @media (min-width: 768px) {
@@ -7765,7 +7764,7 @@ body.admin-menu {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (desktops, 1200px and up) */
 .search-bar {
-  background: #e4e3e3; }
+  background: #eeeeee; }
   .search-bar .form-group {
     width: 80%;
     float: left;
@@ -7776,7 +7775,7 @@ body.admin-menu {
 .btn-desktop-search {
   float: right;
   border-radius: 0;
-  background: #9187a8;
+  background: #555555;
   margin-top: -2em; }
   .btn-desktop-search i {
     color: white; }
@@ -7800,9 +7799,9 @@ body.admin-menu {
 .search-by-page-form form {
   padding: 10px 0; }
 .search-by-page-form .btn-primary {
-  background: #473968;
+  background: #333333;
   border-radius: 0;
-  border-color: #473968;
+  border-color: #333333;
   margin-left: .5em; }
 
 /* Small devices (tablets, 768px and up) */
@@ -7855,7 +7854,7 @@ footer {
     border: 0; }
   .social-links i {
     font-size: 3em;
-    color: #666; }
+    color: #555555; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -7865,7 +7864,7 @@ footer {
   footer .nav > li {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid #999; }
+    border-left: 1px solid #777777; }
   footer .nav > li:first-child {
     padding-left: 0;
     border: none; }

@@ -1,7 +1,7 @@
 // Desktop search box in header
 // ---------------------------- //
 .search-bar {
-	background: $pale-gray;
+	background: $gray-lighter;
 	.form-group {
 		width: 80%;
 		float: left;
@@ -14,7 +14,7 @@
 .btn-desktop-search {
 	float: right;
 	border-radius: 0;
-	background: $purple;
+	background: $gray;
 	margin-top: -2em;
 	i {
 		color: white;
@@ -56,9 +56,9 @@
 		padding: 10px 0;
 	}
 	.btn-primary {
-		background: $dark-purple;
+		background: $gray-dark;
 		border-radius: 0;
-		border-color: $dark-purple;
+		border-color: $gray-dark;
 		margin-left: .5em;
 	}
 }

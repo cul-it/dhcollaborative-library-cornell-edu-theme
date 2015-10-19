@@ -1,6 +1,5 @@
 body {
 	font-family: $font-family-sans-serif;
-	background: $pale-gray; // footer color
 }
 
 // Links
@@ -18,12 +17,12 @@ a:hover {
 .main-content,
 footer {
 	a {
-		border-bottom: 1px dotted $light-gray;
+		border-bottom: 1px dotted $gray-light;
 	}
 	a:hover,
 	a:active,
 	a:focus {
-		border-bottom: 1px solid $light-gray;
+		border-bottom: 1px solid $gray-light;
 		text-decoration: none;
 	}
 }
@@ -81,8 +80,8 @@ h5 {
 // Buttons
 // -------------- //
 .btn-primary {
-	background: $medium-gray;
+	background: $gray;
 	border-radius: 0;
-	border-color: $medium-gray;
+	border-color: $gray;
 	margin-left: .5em;
 }
