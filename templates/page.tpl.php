@@ -79,7 +79,7 @@
     <div class="container">
       <div class="row">
         <div class="cornell-logo">
-          <a href="http://www.cornell.edu"><img src="/sites/all/themes/aandc/img/cornell-black.gif" alt="Cornell University"></a>
+          <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/cornell-black.gif" alt="Cornell University"></a>
         </div>
         <div class="global-menu">
           <div class="navbar">
@@ -129,7 +129,7 @@
         <i class="fa fa-search"></i>
       </button>
       <div class="cu-insignia">
-        <a href="http://www.cornell.edu"><img src="/sites/all/themes/aandc/img/CU-Insignia-Black-120.png" alt="Cornell University" class="img-responsive hidden-xs"></a>
+        <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/CU-Insignia-Black-120.png" alt="Cornell University" class="img-responsive hidden-xs"></a>
       </div>
       <div class="library-brand">
         <a class="cul-brand" href="http://www.library.cornell.edu">Cornell University Library</a>
