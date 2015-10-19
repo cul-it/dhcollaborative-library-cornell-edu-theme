@@ -60,7 +60,7 @@
 nav {
 	background: white;
 	.container {
-		background: $hot-pink;
+		background: $gray-dark;
 		padding-left: 0;
 	}
 	.nav {
@@ -69,21 +69,23 @@ nav {
 			a {
 				color: white;
 				font-size: 14px;
-				padding: 15px 20px;
+				padding: 15px 20px 10px 20px;
 				font-family: $font-family-cul;
 				text-transform: uppercase;
+				border-bottom: 5px solid $gray-dark;
 			}
 			a:hover,
 			a:active,
 			a:focus {
-				background: $hot-pink-active;
+				background: $hot-pink;
 				text-decoration: none;
 			}
 		}
 		.active {
 			a, a:hover, a:active, a:focus {
-				background: $hot-pink-active;
+				border-color: $hot-pink;
 				text-decoration: none;
+				background: $gray-dark;
 			}
 		}
 	}

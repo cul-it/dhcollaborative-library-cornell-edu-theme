@@ -7631,24 +7631,26 @@ header {
 nav {
   background: white; }
   nav .container {
-    background: #f01653;
+    background: #333333;
     padding-left: 0; }
   nav .nav li {
     float: left; }
     nav .nav li a {
       color: white;
       font-size: 14px;
-      padding: 15px 20px;
+      padding: 15px 20px 10px 20px;
       font-family: "Montserrat";
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      border-bottom: 5px solid #333333; }
     nav .nav li a:hover,
     nav .nav li a:active,
     nav .nav li a:focus {
-      background: #ce1045;
+      background: #f01653;
       text-decoration: none; }
   nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
-    background: #ce1045;
-    text-decoration: none; }
+    border-color: #f01653;
+    text-decoration: none;
+    background: #333333; }
 
 #mobile-nav {
   background: white; }
