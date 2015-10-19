@@ -7440,15 +7440,11 @@ a:hover {
   color: black;
   text-decoration: none; }
 
-Add underlines to links in main content area
 .main-content a,
 footer a {
   text-decoration: underline; }
-Add underlines to links in main content area
 .main-content a:hover,
-Add underlines to links in main content area
 .main-content a:active,
-Add underlines to links in main content area
 .main-content a:focus,
 footer a:hover,
 footer a:active,
