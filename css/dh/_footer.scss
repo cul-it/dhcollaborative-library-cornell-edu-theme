@@ -15,24 +15,27 @@ footer {
 		font-size: 16px;
 		margin: 0 0 1em 0;
 	}
-}
-.social-links {
-	margin-top: 1.5em;
-	a {
-		border: 0;
-		margin-left: 5px;
-	}
-	a:first-child {
-		margin-left: 0;
-	}
-	a:hover, a:active, a:focus {
-		border: 0;
-	}
-	i {
-		font-size: 3em;
-		color: $gray;
+	.nav > li > a:hover {
+		text-decoration: underline;
 	}
 }
+// .social-links {
+// 	margin-top: 1.5em;
+// 	a {
+// 		border: 0;
+// 		margin-left: 5px;
+// 	}
+// 	a:first-child {
+// 		margin-left: 0;
+// 	}
+// 	a:hover, a:active, a:focus {
+// 		border: 0;
+// 	}
+// 	i {
+// 		font-size: 3em;
+// 		color: $gray;
+// 	}
+// }
 
 // CUL footer
 // --------------------
@@ -40,7 +43,44 @@ footer {
 .cul-footer {
 	background: $gray-dark;
 	padding: 2em 0;
+	color: white;
+	p, li {
+		font-size: 13px;
+	}
+	.block-title {
+		font-size: 14px;
+		font-family: $font-family-cul;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	.block {
+		margin-bottom: .75em;
+	}
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+	.btn-give {
+		background: $cornell-red;
+		font-family: $font-family-cul;
+		color: white;
+		font-size: 12px;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 5px 10px;
+		border: 0;
+		border-radius: 0;
+		text-decoration: none;
+	}
+	.btn-give:hover,
+	.btn-give:active,
+	.btn-give:focus {
+		border: 0;
+		background: $cornell-red;
+		color: white;
+	}
 }
+
 
 // MEDIA QUERIES
 // -------------------------
@@ -67,7 +107,6 @@ footer {
 		.nav > li > a:active,
 		.nav > li > a:focus {
 			background: inherit;
-			text-decoration: none;
 		}
 	}
 }

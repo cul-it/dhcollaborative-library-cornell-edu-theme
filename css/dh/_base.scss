@@ -8,23 +8,23 @@ body {
 
 a { 
 	color: $link-primary;
+	text-decoration: none;
 }
 a:hover {
 	color: $link-primary-hover;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
-// Add underlines to links in main content area
+Add underlines to links in main content area
 .main-content,
 footer {
 	a {
-		border-bottom: 1px dotted $gray-light;
+		text-decoration: underline;
 	}
 	a:hover,
 	a:active,
 	a:focus {
-		border-bottom: 1px solid $gray-light;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 }
 

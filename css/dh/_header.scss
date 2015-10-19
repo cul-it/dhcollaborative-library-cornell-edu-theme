@@ -37,7 +37,6 @@
 .brand:active,
 .brand-focus {
 	color: $gray-dark;
-	text-decoration: none;
 }
 .cul-brand {
 	color: $gray-dark;
@@ -46,9 +45,8 @@
 	display: block;
 	margin-bottom: .15em;
 }
-.cul-brand:hover {
+.cul-brand:hover, .cul-brand:active, .cul-brand:focus {
 	color: $gray-dark;
-	text-decoration: none;
 }
 
 // MEDIA QUERIES
