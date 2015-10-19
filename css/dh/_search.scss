@@ -1,0 +1,104 @@
+// Desktop search box in header
+// ---------------------------- //
+.search-bar {
+	background: $pale-gray;
+	.form-group {
+		width: 80%;
+		float: left;
+		margin-bottom: 0;
+	}
+	form {
+		padding: 10px 0;
+	}
+}
+.btn-desktop-search {
+	float: right;
+	border-radius: 0;
+	background: $purple;
+	margin-top: -2em;
+	i {
+		color: white;
+	}
+}
+
+// Mobile search box
+// ------------------------ //
+#mobile-search {
+	form {
+		padding: 5px;
+	}
+	.form-group {
+		width: 70%;
+		float: left;
+		margin-bottom: 0;
+	}
+	.btn-search {
+		i {
+			font-size: 18px;
+		}
+	}
+}
+
+// Search results 
+// ------------------------- //
+// hide author without messing with template
+.search-info {
+	display: none;
+}
+// Search box
+.search-by-page-form {
+	.form-group {
+		width: 80%;
+		float: left;
+		margin-bottom: 0;
+	}
+	form {
+		padding: 10px 0;
+	}
+	.btn-primary {
+		background: $dark-purple;
+		border-radius: 0;
+		border-color: $dark-purple;
+		margin-left: .5em;
+	}
+}
+
+// MEDIA QUERIES
+// -------------------------
+
+  // /* Extra small devices (phones, up to 480px) */
+  // /* No media query since this is the default in Bootstrap */
+
+  // /* Small devices (tablets, 768px and up) */
+  // @media (min-width: @screen-sm) { ... }
+
+  // /* Medium devices (desktops, 992px and up) */
+  // @media (min-width: @screen-md) { ... }
+
+  // /* Large devices (large desktops, 1200px and up) */
+  // @media (min-width: @screen-lg) { ... }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) { 
+	.header-search {
+		.form-group {
+			width: 70%;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+	.brand {
+		font-size: 36px;
+	}
+	.header-search {
+		.form-group {
+			width: 80%;
+		}
+	}
+}
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: $screen-lg) {
+}
