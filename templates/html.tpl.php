@@ -67,11 +67,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <script>
-    jQuery(document).ready(function() { 
-      jQuery( '.cul-icon-chevron' ).before( '<i class="fa fa-chevron-right"></i>' );
-    });
-  </script>
   <!-- Piwik -->
   <script type="text/javascript">
     var _paq = _paq || [];
@@ -80,12 +75,12 @@
     (function() {
       var u="//webanalytics.library.cornell.edu/";
       _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 509]);
+      _paq.push(['setSiteId', 518]);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
-  <noscript><p><img src="//webanalytics.library.cornell.edu/piwik.php?idsite=509" style="border:0;" alt="" /></p></noscript>
+  <noscript><p><img src="//webanalytics.library.cornell.edu/piwik.php?idsite=518" style="border:0;" alt="" /></p></noscript>
   <!-- End Piwik Code -->
 
 </body>
