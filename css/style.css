@@ -7517,7 +7517,7 @@ h5 {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Montserrat";
-  display: block;
+  display: inline-block;
   line-height: 1em;
   color: #333333; }
 
@@ -7530,7 +7530,7 @@ h5 {
   color: #333333;
   font-size: 24px;
   font-family: "Montserrat";
-  display: block;
+  display: inline-block;
   margin-bottom: .15em; }
 
 .cul-brand:hover, .cul-brand:active, .cul-brand:focus {
