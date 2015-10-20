@@ -7430,7 +7430,8 @@ button.close {
 
 body {
   font-family: "Roboto Slab", Georgia, serif;
-  background: #333333; }
+  background: #333333;
+  border-top: 5px solid #f01653; }
 
 a {
   color: black;
@@ -7765,7 +7766,7 @@ body.admin-menu {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (desktops, 1200px and up) */
 .search-bar {
-  background: #eeeeee; }
+  background: #f01653; }
   .search-bar .form-group {
     width: 80%;
     float: left;
