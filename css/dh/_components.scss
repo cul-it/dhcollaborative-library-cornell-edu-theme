@@ -80,8 +80,13 @@ body.admin-menu { padding-top: 0 !important; }
 // Highlight box
 // -----------------------------
 .highlight {
-  float: right;
-  width: 40%;
+  margin: 2em 0 0 0;
+  h2 {
+    font-size: 14px;
+    color: $hot-pink;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+  }
 }
 
 // MEDIA QUERIES

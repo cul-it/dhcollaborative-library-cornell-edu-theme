@@ -7759,8 +7759,12 @@ body.admin-menu {
   margin-bottom: 3em; }
 
 .highlight {
-  float: right;
-  width: 40%; }
+  margin: 2em 0 0 0; }
+  .highlight h2 {
+    font-size: 14px;
+    color: #f01653;
+    text-transform: uppercase;
+    margin: 0 0 1em 0; }
 
 @media (min-width: 768px) {
   .fa-ul {
