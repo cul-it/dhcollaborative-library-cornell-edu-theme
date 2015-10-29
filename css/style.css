@@ -7758,12 +7758,13 @@ body.admin-menu {
 .banner-image {
   margin-bottom: 3em; }
 
-/* Small devices (tablets, 768px and up) */
+.highlight {
+  float: right;
+  width: 40%; }
+
 @media (min-width: 768px) {
   .fa-ul {
     margin-left: 2.14286em; } }
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (desktops, 1200px and up) */
 .search-bar {
   background: #333333; }
   .search-bar .form-group {

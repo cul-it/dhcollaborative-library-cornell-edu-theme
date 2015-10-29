@@ -77,33 +77,26 @@ body.admin-menu { padding-top: 0 !important; }
   margin-bottom: 3em;
 }
 
+// Highlight box
+// -----------------------------
+.highlight {
+  float: right;
+  width: 40%;
+}
 
 // MEDIA QUERIES
 // -------------------------
 
-  // /* Extra small devices (phones, up to 480px) */
-  // /* No media query since this is the default in Bootstrap */
-
-  // /* Small devices (tablets, 768px and up) */
-  // @media (min-width: @screen-sm) { ... }
-
-  // /* Medium devices (desktops, 992px and up) */
-  // @media (min-width: @screen-md) { ... }
-
-  // /* Large devices (large desktops, 1200px and up) */
-  // @media (min-width: @screen-lg) { ... }
-
-
-/* Small devices (tablets, 768px and up) */
+// Small devices (tablets, 768px and up)
 @media (min-width: $screen-sm) { 
   .fa-ul {
     margin-left: 2.14286em;
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md) {
-}
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: $screen-lg) {
-}
+// Medium devices (desktops, 992px and up)
+// @media (min-width: $screen-md) {
+// }
+// Large devices (desktops, 1200px and up)
+// @media (min-width: $screen-lg) {
+// }
