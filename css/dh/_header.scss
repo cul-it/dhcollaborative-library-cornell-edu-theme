@@ -1,3 +1,7 @@
+header {
+	padding-bottom: 1em;
+}
+
 // Cornell brand
 // ------------------- //
 
@@ -26,7 +30,7 @@
 }
 .brand {
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 29px;
 	font-family: $font-family-cul;
 	display: inline-block;
 	line-height: 1em;
@@ -43,7 +47,7 @@
 .cul-brand {
 	// color: $gray-dark;
 	color: white;
-	font-size: 24px;
+	font-size: 21px;
 	font-family: $font-family-cul;
 	display: inline-block;
 	margin-bottom: .15em;
@@ -57,22 +61,15 @@
 // MEDIA QUERIES
 // -------------------------
 
-  // /* Extra small devices (phones, up to 480px) */
-  // /* No media query since this is the default in Bootstrap */
-
-  // /* Small devices (tablets, 768px and up) */
-  // @media (min-width: @screen-sm) { ... }
-
-  // /* Medium devices (desktops, 992px and up) */
-  // @media (min-width: @screen-md) { ... }
-
-  // /* Large devices (large desktops, 1200px and up) */
-  // @media (min-width: @screen-lg) { ... }
-
-
-/* Small devices (tablets, 768px and up) */
-// @media (min-width: $screen-sm) { 
-// }
+// Small devices (tablets, 768px and up)
+@media (min-width: $screen-sm) { 
+	.cul-brand {
+		font-size: 24px;
+	}
+	header {
+		padding-bottom: 0;
+	}
+}
 
 /* Medium devices (desktops, 992px and up) */
 // @media (min-width: $screen-md) {

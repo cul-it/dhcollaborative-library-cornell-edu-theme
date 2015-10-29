@@ -10,20 +10,20 @@
 .navbar-toggle {
 	margin: 0;
 	font-size: 120%;
-	background: $gray-lighter;
+	background: $hot-pink-dark;
 	border-radius: 0;
 	padding: 10px 15px;
 }
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
-	background: $gray-lighter;
+	background: $hot-pink-dark;
 }
 .search-toggle {
-	background: $gray;
-	color: $hot-pink;
+	background: $hot-pink;
+	color: white;
 }
 .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-	background: $gray;
-	color: $hot-pink;
+	background: $hot-pink;
+	color: white;
 }
 
 // Global nav
@@ -169,7 +169,7 @@ nav {
 		.nav {
 			li {
 				a {
-					// font-size: 14px;
+					font-size: 11px;
 					padding: 10px;
 				}
 			}
@@ -186,7 +186,7 @@ nav {
 		.nav {
 			li {
 				a {
-					// font-size: 16px;
+					font-size: 12px;
 					padding: 15px 20px;
 				}
 			}
@@ -196,13 +196,13 @@ nav {
 }
 // Large devices (desktops, 1200px and up)
 @media (min-width: $screen-lg) {
-	// nav {
-	// 	.nav {
-	// 		li {
-	// 			a {
-	// 				font-size: 18px;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	nav {
+		.nav {
+			li {
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }

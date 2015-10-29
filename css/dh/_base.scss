@@ -1,8 +1,6 @@
 body {
 	font-family: $font-family-serif;
 	background: $gray-dark; //footer background color
-	// border-top: 5px solid $hot-pink;
-	border-top: 5px solid $gray-dark;
 }
 
 // Links
@@ -88,3 +86,24 @@ h5 {
 	border-color: $gray;
 	margin-left: .5em;
 }
+
+
+// MEDIA QUERIES
+// -------------------------
+
+// Small devices (tablets, 768px and up)
+@media (min-width: $screen-sm) { 
+	body {
+		border-top: 5px solid $gray-dark;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+// @media (min-width: $screen-md) {
+// 	.brand {
+// 		font-size: 30px;
+// 	}
+// }
+/* Large devices (desktops, 1200px and up) */
+// @media (min-width: $screen-lg) {
+// }

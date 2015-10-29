@@ -7430,8 +7430,7 @@ button.close {
 
 body {
   font-family: "Roboto Slab", Georgia, serif;
-  background: #333333;
-  border-top: 5px solid #333333; }
+  background: #333333; }
 
 a {
   color: black;
@@ -7494,6 +7493,14 @@ h5 {
   border-color: #555555;
   margin-left: .5em; }
 
+@media (min-width: 768px) {
+  body {
+    border-top: 5px solid #333333; } }
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (desktops, 1200px and up) */
+header {
+  padding-bottom: 1em; }
+
 .cornell-identity .container {
   background: #222; }
 .cornell-identity .cornell-logo {
@@ -7515,7 +7522,7 @@ h5 {
 
 .brand {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 29px;
   font-family: "Montserrat";
   display: inline-block;
   line-height: 1em;
@@ -7529,7 +7536,7 @@ h5 {
 
 .cul-brand {
   color: white;
-  font-size: 24px;
+  font-size: 21px;
   font-family: "Montserrat";
   display: inline-block;
   margin-bottom: .15em;
@@ -7538,7 +7545,12 @@ h5 {
 .cul-brand:hover, .cul-brand:active, .cul-brand:focus {
   color: white; }
 
-/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cul-brand {
+    font-size: 24px; }
+
+  header {
+    padding-bottom: 0; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (desktops, 1200px and up) */
 .wrapper {
@@ -7550,7 +7562,8 @@ h5 {
 
 .main-content .container {
   background: white;
-  padding: 4em 0 0 0; }
+  padding-top: 4em;
+  padding-bottom: 2em; }
 
 .main-text {
   position: relative;
@@ -7580,7 +7593,10 @@ h5 {
       background: inherit; }
 
   .sidebar {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .main-content .container {
+    padding-bottom: 0; } }
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -7590,20 +7606,20 @@ h5 {
 .navbar-toggle {
   margin: 0;
   font-size: 120%;
-  background: #eeeeee;
+  background: #ce1045;
   border-radius: 0;
   padding: 10px 15px; }
 
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
-  background: #eeeeee; }
+  background: #ce1045; }
 
 .search-toggle {
-  background: #555555;
-  color: #f01653; }
+  background: #f01653;
+  color: white; }
 
 .search-toggle:hover, .search-toggle:active, .search-toggle:focus {
-  background: #555555;
-  color: #f01653; }
+  background: #f01653;
+  color: white; }
 
 .global-menu {
   position: relative;
@@ -7695,10 +7711,15 @@ nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .na
     float: right; }
 
   nav .nav li a {
+    font-size: 11px;
     padding: 10px; } }
 @media (min-width: 992px) {
   nav .nav li a {
+    font-size: 12px;
     padding: 15px 20px; } }
+@media (min-width: 1200px) {
+  nav .nav li a {
+    font-size: 14px; } }
 body.admin-menu {
   padding-top: 0 !important; }
 
@@ -7796,12 +7817,17 @@ body.admin-menu {
   margin-bottom: 0; }
 #mobile-search .btn-search i {
   font-size: 18px; }
+#mobile-search .search-by-page-form {
+  background: white; }
 
 .search-info {
   display: none; }
 
+.search-by-page-form .container {
+  padding: 0;
+  background: inherit; }
 .search-by-page-form .form-group {
-  width: 80%;
+  width: 70%;
   float: left;
   margin-bottom: 0; }
 .search-by-page-form form {
@@ -7811,6 +7837,9 @@ body.admin-menu {
   border-radius: 0;
   border-color: #f01653;
   margin-left: .5em; }
+
+ol.search-results {
+  padding-left: 15px; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -7825,6 +7854,7 @@ body.admin-menu {
     width: 80%; } }
 /* Large devices (desktops, 1200px and up) */
 footer {
+  display: none;
   padding: 2em;
   margin-top: 4em;
   background: #eeeeee; }
@@ -7878,19 +7908,21 @@ footer {
   .fa-ul {
     margin-left: 2.14286em; }
 
-  footer .nav > li {
-    float: left;
-    padding: 0 10px;
-    border-left: 1px solid #777777; }
-  footer .nav > li:first-child {
-    padding-left: 0;
-    border: none; }
-  footer .nav > li > a {
-    padding: 0; }
-  footer .nav > li > a:hover,
-  footer .nav > li > a:active,
-  footer .nav > li > a:focus {
-    background: inherit; } }
+  footer {
+    display: block; }
+    footer .nav > li {
+      float: left;
+      padding: 0 10px;
+      border-left: 1px solid #777777; }
+    footer .nav > li:first-child {
+      padding-left: 0;
+      border: none; }
+    footer .nav > li > a {
+      padding: 0; }
+    footer .nav > li > a:hover,
+    footer .nav > li > a:active,
+    footer .nav > li > a:focus {
+      background: inherit; } }
 @media print {
   a[href]:after {
     content: ""; }

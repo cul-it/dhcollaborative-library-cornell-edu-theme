@@ -1,5 +1,6 @@
 
 footer {
+	display: none; // hide DH footer on smartphones
 	padding: 2em;
 	margin-top: 4em;
 	background: $gray-lighter;
@@ -91,6 +92,7 @@ footer {
     	margin-left: 2.14286em;
   	}
   	footer {
+  		display: block;
 		.nav > li {
 			float: left;
 			padding: 0 10px;

@@ -41,7 +41,11 @@
 			font-size: 18px;
 		}
 	}
+	.search-by-page-form {
+		background: white;
+	}
 }
+
 
 // Search results 
 // ------------------------- //
@@ -51,8 +55,12 @@
 }
 // Search box
 .search-by-page-form {
+	.container {
+		padding: 0;
+		background: inherit;
+	}
 	.form-group {
-		width: 80%;
+		width: 70%;
 		float: left;
 		margin-bottom: 0;
 	}
@@ -67,6 +75,9 @@
 		border-color: $hot-pink;
 		margin-left: .5em;
 	}
+}
+ol.search-results {
+	padding-left: 15px;
 }
 
 // MEDIA QUERIES

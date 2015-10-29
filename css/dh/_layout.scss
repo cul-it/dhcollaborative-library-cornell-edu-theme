@@ -20,7 +20,8 @@
 	// background-size: cover;
 	.container {
 		background: white;
-		padding: 4em 0 0 0;
+		padding-top: 4em;
+		padding-bottom: 2em;
 	}
 }
 .main-text {
@@ -50,6 +51,11 @@
 	}
 	.sidebar {
 		margin-top: 0;
+	}
+	.main-content {
+		.container {
+			padding-bottom: 0;
+		}
 	}
 }
 
