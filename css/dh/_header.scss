@@ -16,7 +16,7 @@
 }
 .cu-insignia {
 	float: left;
-	margin-right: 1.5em;
+	margin-right: 1em;
 }
 
 // Library brand
@@ -30,22 +30,28 @@
 	font-family: $font-family-cul;
 	display: inline-block;
 	line-height: 1em;
-	color: $gray-dark;
+	// color: $gray-dark;
+	color: white;
+	text-shadow: 1px 1px $gray;
 }
 .brand:hover,
 .brand:active,
 .brand-focus {
-	color: $gray-dark;
+	// color: $gray-dark;
+	color: white;
 }
 .cul-brand {
-	color: $gray-dark;
+	// color: $gray-dark;
+	color: white;
 	font-size: 24px;
 	font-family: $font-family-cul;
 	display: inline-block;
 	margin-bottom: .15em;
+	text-shadow: 1px 1px $gray;
 }
 .cul-brand:hover, .cul-brand:active, .cul-brand:focus {
-	color: $gray-dark;
+	// color: $gray-dark;
+	color: white;
 }
 
 // MEDIA QUERIES

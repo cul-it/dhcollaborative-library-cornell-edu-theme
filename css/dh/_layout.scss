@@ -1,15 +1,23 @@
-header {
-	background: white;
-}
-
-// Main content
-// -------------- //
-.main-content {
-	background: url("../img/background.jpg") no-repeat;
+.wrapper {
+	background: url("../img/DHcolorgrid.jpg") no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+// header {
+// 	background: white;
+// }
+
+// Main content
+// -------------- //
+.main-content {
+	// background: url("../img/background.jpg") no-repeat;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
 	.container {
 		background: white;
 		padding: 4em 0 0 0;

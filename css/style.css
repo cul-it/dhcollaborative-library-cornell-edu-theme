@@ -7431,7 +7431,7 @@ button.close {
 body {
   font-family: "Roboto Slab", Georgia, serif;
   background: #333333;
-  border-top: 5px solid #f01653; }
+  border-top: 5px solid #333333; }
 
 a {
   color: black;
@@ -7508,7 +7508,7 @@ h5 {
 
 .cu-insignia {
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1em; }
 
 .library-brand {
   margin-top: 1em; }
@@ -7519,38 +7519,38 @@ h5 {
   font-family: "Montserrat";
   display: inline-block;
   line-height: 1em;
-  color: #333333; }
+  color: white;
+  text-shadow: 1px 1px #555555; }
 
 .brand:hover,
 .brand:active,
 .brand-focus {
-  color: #333333; }
+  color: white; }
 
 .cul-brand {
-  color: #333333;
+  color: white;
   font-size: 24px;
   font-family: "Montserrat";
   display: inline-block;
-  margin-bottom: .15em; }
+  margin-bottom: .15em;
+  text-shadow: 1px 1px #555555; }
 
 .cul-brand:hover, .cul-brand:active, .cul-brand:focus {
-  color: #333333; }
+  color: white; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (desktops, 1200px and up) */
-header {
-  background: white; }
-
-.main-content {
-  background: url("../img/background.jpg") no-repeat;
+.wrapper {
+  background: url("../img/DHcolorgrid.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .main-content .container {
-    background: white;
-    padding: 4em 0 0 0; }
+
+.main-content .container {
+  background: white;
+  padding: 4em 0 0 0; }
 
 .main-text {
   position: relative;
@@ -7627,29 +7627,28 @@ header {
 #menu .nav .active a, #menu .nav .active a:hover, #menu .nav .active a:active, #menu .nav .active a:focus {
   font-weight: 700; }
 
-nav {
-  background: white; }
-  nav .container {
-    background: #333333;
-    padding-left: 0; }
-  nav .nav li {
-    float: left; }
-    nav .nav li a {
-      color: white;
-      font-size: 14px;
-      padding: 15px 20px 10px 20px;
-      font-family: "Montserrat";
-      text-transform: uppercase;
-      border-bottom: 5px solid #333333; }
-    nav .nav li a:hover,
-    nav .nav li a:active,
-    nav .nav li a:focus {
-      background: #f01653;
-      text-decoration: none; }
-  nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
-    border-color: #f01653;
+nav .container {
+  background: #333333;
+  padding-left: 0; }
+nav .nav li {
+  float: left; }
+  nav .nav li a {
+    color: white;
+    font-size: 14px;
+    padding: 15px 20px 10px 20px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    border-bottom: 5px solid #333333; }
+  nav .nav li a:hover,
+  nav .nav li a:active,
+  nav .nav li a:focus {
+    border-color: #feb103;
     text-decoration: none;
-    background: #333333; }
+    background: inherit; }
+nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
+  border-color: #f01653;
+  text-decoration: none;
+  background: inherit; }
 
 #mobile-nav {
   background: white; }
@@ -7766,7 +7765,7 @@ body.admin-menu {
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (desktops, 1200px and up) */
 .search-bar {
-  background: #f01653; }
+  background: #333333; }
   .search-bar .form-group {
     width: 80%;
     float: left;
@@ -7777,10 +7776,12 @@ body.admin-menu {
 .btn-desktop-search {
   float: right;
   border-radius: 0;
-  background: #f01653;
-  margin-top: -2em; }
+  background: #333333;
+  margin-top: -2em;
+  padding-top: 3px; }
   .btn-desktop-search i {
-    color: white; }
+    color: white;
+    font-size: 2em; }
 
 #mobile-search form {
   padding: 5px; }
@@ -7801,9 +7802,9 @@ body.admin-menu {
 .search-by-page-form form {
   padding: 10px 0; }
 .search-by-page-form .btn-primary {
-  background: #333333;
+  background: #f01653;
   border-radius: 0;
-  border-color: #333333;
+  border-color: #f01653;
   margin-left: .5em; }
 
 /* Small devices (tablets, 768px and up) */

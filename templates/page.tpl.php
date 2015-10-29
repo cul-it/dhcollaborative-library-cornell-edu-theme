@@ -74,137 +74,139 @@
  */
 ?>
 
-<div class="hero">
-  <div class="cornell-identity visible-xs">
-    <div class="container">
-      <div class="row">
-        <div class="cornell-logo">
-          <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/cornell-black.gif" alt="Cornell University"></a>
-        </div>
-        <div class="global-menu">
-          <div class="navbar">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
-                <span class="sr-only">Menu</span>
-                <i class="fa fa-bars"></i>
-              </button>
-              <button type="button" class="navbar-toggle search-toggle collapsed" data-toggle="collapse" data-target="#mobile-search">
-                <span class="sr-only">Search</span>
-                <i class="fa fa-search"></i>
-              </button>
+<div class="wrapper">
+  <div class="hero">
+    <div class="cornell-identity visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="cornell-logo">
+            <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/cornell-black.gif" alt="Cornell University"></a>
+          </div>
+          <div class="global-menu">
+            <div class="navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
+                  <span class="sr-only">Menu</span>
+                  <i class="fa fa-bars"></i>
+                </button>
+                <button type="button" class="navbar-toggle search-toggle collapsed" data-toggle="collapse" data-target="#mobile-search">
+                  <span class="sr-only">Search</span>
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>  
+        </div>  
+      </div>
     </div>
-  </div>
-  <div class="hidden-xs search-bar">
-    <div class="container">
-      <?php if (!empty($page['search'])): ?>
-        <div id="desktop-search" class="collapse">
-          <?php print render($page['search']); ?>
-        </div>
-      <?php endif; ?>
-    </div>
-  </div>
-  <header>
-    <?php if (!empty($page['mobile_nav'])): ?>
-      <div id="mobile-nav" class="collapse">
-        <?php print render($page['mobile_nav']); ?>
-      </div>
-    <?php endif; ?>
-    <?php if (!empty($page['mobile_search'])): ?>
-      <div id="mobile-search" class="collapse">
-        <?php print render($page['mobile_search']); ?>
-      </div>
-    <?php endif; ?>
-    <div class="container">
-      <button type="button" class="collapsed btn btn-desktop-search hidden-xs" data-toggle="collapse" data-target="#desktop-search">
-        <span class="sr-only">Search</span>
-        <i class="fa fa-search"></i>
-      </button>
-      <div class="cu-insignia">
-        <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/CU-Insignia-Black-120.png" alt="Cornell University" class="img-responsive hidden-xs"></a>
-      </div>
-      <div class="library-brand">
-        <a class="cul-brand" href="http://www.library.cornell.edu">Cornell University Library</a>
-        <?php if (!empty($site_name)): ?>
-          <a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+    <div class="hidden-xs search-bar">
+      <div class="container">
+        <?php if (!empty($page['search'])): ?>
+          <div id="desktop-search" class="collapse">
+            <?php print render($page['search']); ?>
+          </div>
         <?php endif; ?>
       </div>
     </div>
-  </header>
-  <?php if (!empty($page['main_nav'])): ?>
-    <nav class="navbar hidden-xs">
+    <header>
+      <?php if (!empty($page['mobile_nav'])): ?>
+        <div id="mobile-nav" class="collapse">
+          <?php print render($page['mobile_nav']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (!empty($page['mobile_search'])): ?>
+        <div id="mobile-search" class="collapse">
+          <?php print render($page['mobile_search']); ?>
+        </div>
+      <?php endif; ?>
       <div class="container">
-        <div class="navbar-nav">
-          <?php print render($page['main_nav']); ?>
+        <button type="button" class="collapsed btn btn-desktop-search hidden-xs" data-toggle="collapse" data-target="#desktop-search">
+          <span class="sr-only">Search</span>
+          <i class="fa fa-search"></i>
+        </button>
+        <div class="cu-insignia">
+          <a href="http://www.cornell.edu"><img src="/sites/all/themes/dh/img/CU-Insignia-White-120.png" alt="Cornell University" class="img-responsive hidden-xs"></a>
+        </div>
+        <div class="library-brand">
+          <a class="cul-brand" href="http://www.library.cornell.edu">Cornell University Library</a>
+          <?php if (!empty($site_name)): ?>
+            <a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+          <?php endif; ?>
         </div>
       </div>
-    </nav>
-  <?php endif; ?>
-</div>
-
-<div class="main-content" id="main-content">
-  <div class="container">
-    <?php if (!empty($page['sidebar'])): ?>
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <div class="row"> 
-        <div class="main-text">
-          <?php print render($title_prefix); ?>
-          <?php if (!empty($title)): ?>
-            <h1><?php print $title; ?></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php print $messages; ?>
-          <?php if (!empty($tabs)): ?>
-            <?php print render($tabs); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['help'])): ?>
-            <?php print render($page['help']); ?>
-          <?php endif; ?>
-          <?php if (!empty($action_links)): ?>
-            <ul class="action-links"><?php print render($action_links); ?></ul>
-          <?php endif; ?>
-          <?php if(drupal_is_front_page()) {
-            unset($page['content']['system_main']['default_message']);
-          }?>
-          <?php print render($page['content']); ?>
+    </header>
+    <?php if (!empty($page['main_nav'])): ?>
+      <nav class="navbar hidden-xs">
+        <div class="container">
+          <div class="navbar-nav">
+            <?php print render($page['main_nav']); ?>
+          </div>
         </div>
-        <div class="sidebar">
-          <?php print render($page['sidebar']); ?>
-        </div>
-      </div>
-    <?php else: ?>
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <?php print render($title_prefix); ?>
-          <?php if (!empty($title)): ?>
-            <h1><?php print $title; ?></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php print $messages; ?>
-          <?php if (!empty($tabs)): ?>
-            <?php print render($tabs); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['help'])): ?>
-            <?php print render($page['help']); ?>
-          <?php endif; ?>
-          <?php if (!empty($action_links)): ?>
-            <ul class="action-links"><?php print render($action_links); ?></ul>
-          <?php endif; ?>
-          <?php if(drupal_is_front_page()) {
-            unset($page['content']['system_main']['default_message']);
-          }?>
-          <?php print render($page['content']); ?>
-        </div>
-      </div>
+      </nav>
     <?php endif; ?>
-    <footer>
-      <?php print render($page['dh_footer']); ?>
+  </div>
+
+  <div class="main-content" id="main-content">
+    <div class="container">
+      <?php if (!empty($page['sidebar'])): ?>
+      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+        <div class="row"> 
+          <div class="main-text">
+            <?php print render($title_prefix); ?>
+            <?php if (!empty($title)): ?>
+              <h1><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php print $messages; ?>
+            <?php if (!empty($tabs)): ?>
+              <?php print render($tabs); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['help'])): ?>
+              <?php print render($page['help']); ?>
+            <?php endif; ?>
+            <?php if (!empty($action_links)): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+            <?php if(drupal_is_front_page()) {
+              unset($page['content']['system_main']['default_message']);
+            }?>
+            <?php print render($page['content']); ?>
+          </div>
+          <div class="sidebar">
+            <?php print render($page['sidebar']); ?>
+          </div>
+        </div>
+      <?php else: ?>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <?php print render($title_prefix); ?>
+            <?php if (!empty($title)): ?>
+              <h1><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php print $messages; ?>
+            <?php if (!empty($tabs)): ?>
+              <?php print render($tabs); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['help'])): ?>
+              <?php print render($page['help']); ?>
+            <?php endif; ?>
+            <?php if (!empty($action_links)): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+            <?php if(drupal_is_front_page()) {
+              unset($page['content']['system_main']['default_message']);
+            }?>
+            <?php print render($page['content']); ?>
+          </div>
+        </div>
+      <?php endif; ?>
+      <footer>
+        <?php print render($page['dh_footer']); ?>
+      </div>
     </div>
   </div>
-</div>
+</div><!-- wrapper -->
 
 <div class="cul-footer">
   <div class="container">

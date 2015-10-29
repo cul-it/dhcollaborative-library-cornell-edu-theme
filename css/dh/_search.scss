@@ -1,7 +1,8 @@
 // Desktop search box in header
 // ---------------------------- //
 .search-bar {
-	background: $hot-pink;
+	// background: $hot-pink;
+	background: $gray-dark;
 	.form-group {
 		width: 80%;
 		float: left;
@@ -14,10 +15,13 @@
 .btn-desktop-search {
 	float: right;
 	border-radius: 0;
-	background: $hot-pink;
+	// background: $hot-pink;
+	background: $gray-dark;
 	margin-top: -2em;
+	padding-top: 3px;
 	i {
 		color: white;
+		font-size: 2em;
 	}
 }
 
@@ -56,9 +60,11 @@
 		padding: 10px 0;
 	}
 	.btn-primary {
-		background: $gray-dark;
+		// background: $gray-dark;
+		background: $hot-pink;
 		border-radius: 0;
-		border-color: $gray-dark;
+		// border-color: $gray-dark;
+		border-color: $hot-pink;
 		margin-left: .5em;
 	}
 }

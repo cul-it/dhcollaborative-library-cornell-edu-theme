@@ -58,7 +58,7 @@
 // Main nav
 // ------------------- //
 nav {
-	background: white;
+	// background: white;
 	.container {
 		background: $gray-dark;
 		padding-left: 0;
@@ -77,15 +77,16 @@ nav {
 			a:hover,
 			a:active,
 			a:focus {
-				background: $hot-pink;
+				border-color: $orange;
 				text-decoration: none;
+				background: inherit;
 			}
 		}
 		.active {
 			a, a:hover, a:active, a:focus {
 				border-color: $hot-pink;
 				text-decoration: none;
-				background: $gray-dark;
+				background: inherit;
 			}
 		}
 	}
