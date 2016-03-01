@@ -201,7 +201,7 @@
           </div>
         </div>
       <?php endif; ?>
-      <footer>
+      <div class="dh-footer">
         <?php print render($page['dh_footer']); ?>
       </div>
     </div>

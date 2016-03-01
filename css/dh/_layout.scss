@@ -6,18 +6,9 @@
 	background-size: cover;
 }
 
-// header {
-// 	background: white;
-// }
-
 // Main content
 // -------------- //
 .main-content {
-	// background: url("../img/background.jpg") no-repeat;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
 	.container {
 		background: white;
 		padding-top: 4em;
@@ -33,6 +24,16 @@
 .sidebar {
 	@include make-sm-column(4);
 	margin-top: 3em;
+}
+
+// Fix for bootstrap sticking footer in node.tpl.php
+// -------------------------------------------------- //
+.main-content {
+	footer {
+		padding: 0;
+		margin: 0;
+		background: inherit;
+	}
 }
 
 

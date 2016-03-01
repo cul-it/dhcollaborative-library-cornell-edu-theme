@@ -1,5 +1,5 @@
 
-footer {
+.dh-footer {
 	display: none; // hide DH footer on smartphones
 	padding: 2em;
 	margin-top: 4em;
@@ -20,23 +20,6 @@ footer {
 		text-decoration: underline;
 	}
 }
-// .social-links {
-// 	margin-top: 1.5em;
-// 	a {
-// 		border: 0;
-// 		margin-left: 5px;
-// 	}
-// 	a:first-child {
-// 		margin-left: 0;
-// 	}
-// 	a:hover, a:active, a:focus {
-// 		border: 0;
-// 	}
-// 	i {
-// 		font-size: 3em;
-// 		color: $gray;
-// 	}
-// }
 
 // CUL footer
 // --------------------
@@ -91,7 +74,7 @@ footer {
   	.fa-ul {
     	margin-left: 2.14286em;
   	}
-  	footer {
+  	.dh-footer {
   		display: block;
 		.nav > li {
 			float: left;
