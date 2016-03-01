@@ -63,16 +63,17 @@ nav {
 		background: $gray-dark;
 		padding-left: 0;
 	}
-	.nav {
+	.menu {
 		li {
 			float: left;
 			a {
 				color: white;
 				font-size: 14px;
-				padding: 15px 20px 10px 20px;
+				padding: 18px 20px 13px 20px;
 				font-family: $font-family-cul;
 				text-transform: uppercase;
 				border-bottom: 5px solid $gray-dark;
+				line-height: 1.6em;
 			}
 			a:hover,
 			a:active,
@@ -82,14 +83,58 @@ nav {
 				background: inherit;
 			}
 		}
-		.active {
+		.active-trail {
 			a, a:hover, a:active, a:focus {
 				border-color: $hot-pink;
 				text-decoration: none;
 				background: inherit;
 			}
 		}
+		.sfHover {
+			a {
+				border-color: $orange;
+				text-decoration: none;
+				background: inherit;
+			}
+			ul {
+				a {
+					border-color: $gray-dark;
+				}
+				a:hover, a:active, a:focus {
+					border-color: $orange;
+				}
+			}
+		}
+		.sfHover.active-trail {
+			a {
+				border-color: $hot-pink;
+			}
+			ul {
+				a {
+					border-color: $gray-dark;
+				}
+				a:hover, a:active, a:focus {
+					border-color: $orange;
+				}
+			}
+		}
 	}
+}
+
+// Superfish overrides
+// ---------------------
+a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
+	top: 1.65em;
+}
+.sf-sub-indicator {
+	right: .25em;
+}
+.sf-menu a.sf-with-ul, .sf-menu span.nolink.sf-with-ul {
+	margin-right: 5px;
+}
+.sf-menu.menu ul {
+	margin-top: 1.7em;
+	background: $gray-dark;
 }
 
 // Mobile nav

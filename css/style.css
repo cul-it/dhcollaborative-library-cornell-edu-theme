@@ -239,25 +239,53 @@ header {
 nav .container {
   background: #333333;
   padding-left: 0; }
-nav .nav li {
+nav .menu li {
   float: left; }
-  nav .nav li a {
+  nav .menu li a {
     color: white;
     font-size: 14px;
-    padding: 15px 20px 10px 20px;
+    padding: 18px 20px 13px 20px;
     font-family: "Montserrat";
     text-transform: uppercase;
-    border-bottom: 5px solid #333333; }
-  nav .nav li a:hover,
-  nav .nav li a:active,
-  nav .nav li a:focus {
+    border-bottom: 5px solid #333333;
+    line-height: 1.6em; }
+  nav .menu li a:hover,
+  nav .menu li a:active,
+  nav .menu li a:focus {
     border-color: #feb103;
     text-decoration: none;
     background: inherit; }
-nav .nav .active a, nav .nav .active a:hover, nav .nav .active a:active, nav .nav .active a:focus {
+nav .menu .active-trail a, nav .menu .active-trail a:hover, nav .menu .active-trail a:active, nav .menu .active-trail a:focus {
   border-color: #f01653;
   text-decoration: none;
   background: inherit; }
+nav .menu .sfHover a {
+  border-color: #feb103;
+  text-decoration: none;
+  background: inherit; }
+nav .menu .sfHover ul a {
+  border-color: #333333; }
+nav .menu .sfHover ul a:hover, nav .menu .sfHover ul a:active, nav .menu .sfHover ul a:focus {
+  border-color: #feb103; }
+nav .menu .sfHover.active-trail a {
+  border-color: #f01653; }
+nav .menu .sfHover.active-trail ul a {
+  border-color: #333333; }
+nav .menu .sfHover.active-trail ul a:hover, nav .menu .sfHover.active-trail ul a:active, nav .menu .sfHover.active-trail ul a:focus {
+  border-color: #feb103; }
+
+a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
+  top: 1.65em; }
+
+.sf-sub-indicator {
+  right: .25em; }
+
+.sf-menu a.sf-with-ul, .sf-menu span.nolink.sf-with-ul {
+  margin-right: 5px; }
+
+.sf-menu.menu ul {
+  margin-top: 1.7em;
+  background: #333333; }
 
 #mobile-nav {
   background: white; }
