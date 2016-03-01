@@ -11,6 +11,9 @@
 	form {
 		padding: 10px 0;
 	}
+	label {
+		display: inline;
+	}
 }
 .btn-desktop-search {
 	float: right;
@@ -43,6 +46,9 @@
 	}
 	.search-by-page-form {
 		background: white;
+	}
+	label {
+		display: inline;
 	}
 }
 

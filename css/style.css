@@ -386,6 +386,8 @@ body.admin-menu {
     margin-bottom: 0; }
   .search-bar form {
     padding: 10px 0; }
+  .search-bar label {
+    display: inline; }
 
 .btn-desktop-search {
   float: right;
@@ -407,6 +409,8 @@ body.admin-menu {
   font-size: 18px; }
 #mobile-search .search-by-page-form {
   background: white; }
+#mobile-search label {
+  display: inline; }
 
 .search-info {
   display: none; }
